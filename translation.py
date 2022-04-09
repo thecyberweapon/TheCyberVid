@@ -22,7 +22,7 @@ URL | filename | username | password"""
 
     AFTER_SUCCESSFUL_UPLOAD_MSG = "Thanks for using @TheCyberVidBot\n\n<b>Join : @TheCyberVidHub</b>"
 
-    AFTER_SUCCESSFUL_UPLOAD_MSG_WITH_TS = "Downloaded in {} seconds.\nUploaded in {} seconds.\n\n@Uploader_X_Bot"
+    AFTER_SUCCESSFUL_UPLOAD_MSG_WITH_TS = "Downloaded in {} seconds.\nUploaded in {} seconds.\n\n@TheCyberVidExtractorBot"
 
     SAVED_CUSTOM_THUMB_NAIL = "Custom video / file thumbnail saved. This image will be used in the video / file."
 
