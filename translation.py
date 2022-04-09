@@ -2,7 +2,7 @@ class Translation(object):
 
     START_TEXT = """Hi {},
 
-I'm URL X Uploader!
+I'm The Cyber Video Bot!
 
 You can upload HTTP/HTTPS direct link, Using this bot!
 
