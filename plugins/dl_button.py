@@ -101,10 +101,12 @@ async def ddl_call_back(bot, update):
     if os.path.exists(download_directory):
         end_one = datetime.now()
         await bot.edit_message_text(
-            text=Translation.UPLOAD_START,
-            chat_id=update.message.chat.id,
-            message_id=update.message.message_id
-        )
+             progress=progress_for_pyrogram,
+                    progress_args=(
+                        Translation.UPLOAD_START,
+                        update.message,
+                        start_time
+                    )
         file_size = Config.TG_MAX_FILE_SIZE + 1
         try:
             file_size = os.stat(download_directory).st_size
