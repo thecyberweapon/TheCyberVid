@@ -69,9 +69,9 @@ async def ddl_call_back(bot, update):
     mention = user["mention"]
     description = Translation.CUSTOM_CAPTION_UL_FILE.format(mention)
     start = datetime.now()
-    progress_args=(
+    progress=progress_for_pyrogram,progress_args=(
                         Translation.DOWNLOAD_START,
-                        update.message
+                        update.message,update.message.message_id
                     )
     tmp_directory_for_each_user = Config.DOWNLOAD_LOCATION + "/" + str(update.from_user.id)
     if not os.path.isdir(tmp_directory_for_each_user):
