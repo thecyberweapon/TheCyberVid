@@ -85,12 +85,7 @@ async def youtube_dl_call_back(bot, update):
                 o = entity.offset
                 l = entity.length
                 youtube_dl_url = youtube_dl_url[o:o + l]
-                    progress=progress_for_pyrogram,
-                    progress_args=(
-                        text=Translation.DOWNLOAD_START,
-        chat_id=update.message.chat.id,
-        message_id=update.message.message_id
-                    )
+                progress=progress_for_pyrogram,progress_args=(text=Translation.DOWNLOAD_START,chat_id=update.message.chat.id,message_id=update.message.message_id)
     user = await bot.get_me()
     mention = user["mention"]
     description = Translation.CUSTOM_CAPTION_UL_FILE.format(mention)
